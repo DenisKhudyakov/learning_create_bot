@@ -1,7 +1,7 @@
 import telebot
 import config
 bot = telebot.TeleBot(config.BOT_TOKEN)
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['hello'])
 def send_welcome(message):
     bot.reply_to(message, "Добрый день ,Я бот помощник. Что желаете?")
 @bot.message_handler(content_types=['text'])
