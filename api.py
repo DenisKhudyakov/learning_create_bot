@@ -1,4 +1,5 @@
 import requests
+<<<<<<< HEAD
 import json
 
 id_list = []
@@ -28,3 +29,17 @@ for i in url_list:
 # get_product = requests.get(url_product, params=param, headers=headers)
 # print(get_product.text)
 # print(get_product.json())
+=======
+from config_data import config
+
+url = "https://hotels4.p.rapidapi.com/v2/get-meta-data"
+
+headers = {
+	"X-RapidAPI-Key": config.RAPID_API_KEY,
+	"X-RapidAPI-Host": "hotels4.p.rapidapi.com"
+}
+
+response = requests.get(url, headers=headers)
+
+print(response.json())
+>>>>>>> e1e2750 (add_apy.py)
