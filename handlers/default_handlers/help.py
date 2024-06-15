@@ -1,7 +1,7 @@
 from aiogram.types import Message
 
 from config_data.config import DEFAULT_COMMANDS
-from loader import bot
+from src.loader import bot
 
 
 @bot.message_handler(commands=["help"])

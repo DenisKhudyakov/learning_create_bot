@@ -1,6 +1,6 @@
 from aiogram.types import Message
 
-from loader import bot
+from src.loader import bot
 
 
 @bot.message_handler(commands=["start"])

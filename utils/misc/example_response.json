@@ -1,0 +1,638 @@
+{
+    "response": {
+        "GeoObjectCollection": {
+            "metaDataProperty": {
+                "GeocoderResponseMetaData": {
+                    "request": "Миасс",
+                    "results": "10",
+                    "found": "10"
+                }
+            },
+            "featureMember": [
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "Россия, Челябинская область, Миасс",
+                                "kind": "locality",
+                                "Address": {
+                                    "country_code": "RU",
+                                    "formatted": "Россия, Челябинская область, Миасс",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "Россия"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Уральский федеральный округ"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Челябинская область"
+                                        },
+                                        {
+                                            "kind": "area",
+                                            "name": "Миасский городской округ"
+                                        },
+                                        {
+                                            "kind": "locality",
+                                            "name": "Миасс"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "Россия, Челябинская область, Миасс",
+                                        "CountryNameCode": "RU",
+                                        "CountryName": "Россия",
+                                        "AdministrativeArea": {
+                                            "AdministrativeAreaName": "Челябинская область",
+                                            "SubAdministrativeArea": {
+                                                "SubAdministrativeAreaName": "Миасский городской округ",
+                                                "Locality": {
+                                                    "LocalityName": "Миасс"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "Миасс",
+                        "description": "Челябинская область, Россия",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "60.025975 54.944171",
+                                "upperCorner": "60.188085 55.17921"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=Cgg1MzE1MzYyOBI_0KDQvtGB0YHQuNGPLCDQp9C10LvRj9Cx0LjQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQnNC40LDRgdGBIgoNPHBwQhWlM1xC",
+                        "Point": {
+                            "pos": "60.109599 55.050432"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "Россия, Уральский федеральный округ, река Миасс",
+                                "kind": "hydro",
+                                "Address": {
+                                    "country_code": "RU",
+                                    "formatted": "Россия, Уральский федеральный округ, река Миасс",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "Россия"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Уральский федеральный округ"
+                                        },
+                                        {
+                                            "kind": "hydro",
+                                            "name": "река Миасс"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "Россия, Уральский федеральный округ, река Миасс",
+                                        "CountryNameCode": "RU",
+                                        "CountryName": "Россия",
+                                        "Locality": {
+                                            "Premise": {
+                                                "PremiseName": "река Миасс"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "река Миасс",
+                        "description": "Уральский федеральный округ, Россия",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "59.622677 54.750297",
+                                "upperCorner": "64.502128 56.095067"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgkxNDM3MjcwODcSV9Cg0L7RgdGB0LjRjywg0KPRgNCw0LvRjNGB0LrQuNC5INGE0LXQtNC10YDQsNC70YzQvdGL0Lkg0L7QutGA0YPQsywg0YDQtdC60LAg0JzQuNCw0YHRgSIKDSo_eEIVrGhdQg,,",
+                        "Point": {
+                            "pos": "62.061683 55.352219"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "Россия, Челябинская область, Миасс, квартал Машгородок",
+                                "kind": "district",
+                                "Address": {
+                                    "country_code": "RU",
+                                    "formatted": "Россия, Челябинская область, Миасс, квартал Машгородок",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "Россия"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Уральский федеральный округ"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Челябинская область"
+                                        },
+                                        {
+                                            "kind": "area",
+                                            "name": "Миасский городской округ"
+                                        },
+                                        {
+                                            "kind": "locality",
+                                            "name": "Миасс"
+                                        },
+                                        {
+                                            "kind": "district",
+                                            "name": "квартал Машгородок"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "Россия, Челябинская область, Миасс, квартал Машгородок",
+                                        "CountryNameCode": "RU",
+                                        "CountryName": "Россия",
+                                        "AdministrativeArea": {
+                                            "AdministrativeAreaName": "Челябинская область",
+                                            "SubAdministrativeArea": {
+                                                "SubAdministrativeAreaName": "Миасский городской округ",
+                                                "Locality": {
+                                                    "LocalityName": "Миасс",
+                                                    "DependentLocality": {
+                                                        "DependentLocalityName": "квартал Машгородок"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "квартал Машгородок",
+                        "description": "Миасс, Челябинская область, Россия",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "60.140097 55.128814",
+                                "upperCorner": "60.16931 55.172686"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=Cgg1MzE4MDE2NxJk0KDQvtGB0YHQuNGPLCDQp9C10LvRj9Cx0LjQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQnNC40LDRgdGBLCDQutCy0LDRgNGC0LDQuyDQnNCw0YjQs9C-0YDQvtC00L7QuiIKDcCccEIVF5dcQg,,",
+                        "Point": {
+                            "pos": "60.153078 55.147551"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "Россия, Свердловская область, Шалинский городской округ, река Миасс",
+                                "kind": "hydro",
+                                "Address": {
+                                    "country_code": "RU",
+                                    "formatted": "Россия, Свердловская область, Шалинский городской округ, река Миасс",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "Россия"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Уральский федеральный округ"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Свердловская область"
+                                        },
+                                        {
+                                            "kind": "area",
+                                            "name": "Шалинский городской округ"
+                                        },
+                                        {
+                                            "kind": "hydro",
+                                            "name": "река Миасс"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "Россия, Свердловская область, Шалинский городской округ, река Миасс",
+                                        "CountryNameCode": "RU",
+                                        "CountryName": "Россия",
+                                        "AdministrativeArea": {
+                                            "AdministrativeAreaName": "Свердловская область",
+                                            "SubAdministrativeArea": {
+                                                "SubAdministrativeAreaName": "Шалинский городской округ",
+                                                "Locality": {
+                                                    "Premise": {
+                                                        "PremiseName": "река Миасс"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "река Миасс",
+                        "description": "Шалинский городской округ, Свердловская область, Россия",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "58.633946 57.151491",
+                                "upperCorner": "58.75529 57.21069"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgkxNDM1NzYzMTUSfNCg0L7RgdGB0LjRjywg0KHQstC10YDQtNC70L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQqNCw0LvQuNC90YHQutC40Lkg0LPQvtGA0L7QtNGB0LrQvtC5INC-0LrRgNGD0LMsINGA0LXQutCwINCc0LjQsNGB0YEiCg2ht2pCFdnDZEI,",
+                        "Point": {
+                            "pos": "58.679329 57.191255"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "Россия, Челябинская область, Миасс, микрорайон Миасс-2",
+                                "kind": "district",
+                                "Address": {
+                                    "country_code": "RU",
+                                    "formatted": "Россия, Челябинская область, Миасс, микрорайон Миасс-2",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "Россия"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Уральский федеральный округ"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Челябинская область"
+                                        },
+                                        {
+                                            "kind": "area",
+                                            "name": "Миасский городской округ"
+                                        },
+                                        {
+                                            "kind": "locality",
+                                            "name": "Миасс"
+                                        },
+                                        {
+                                            "kind": "district",
+                                            "name": "микрорайон Миасс-2"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "Россия, Челябинская область, Миасс, микрорайон Миасс-2",
+                                        "CountryNameCode": "RU",
+                                        "CountryName": "Россия",
+                                        "AdministrativeArea": {
+                                            "AdministrativeAreaName": "Челябинская область",
+                                            "SubAdministrativeArea": {
+                                                "SubAdministrativeAreaName": "Миасский городской округ",
+                                                "Locality": {
+                                                    "LocalityName": "Миасс",
+                                                    "DependentLocality": {
+                                                        "DependentLocalityName": "микрорайон Миасс-2"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "микрорайон Миасс-2",
+                        "description": "Миасс, Челябинская область, Россия",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "60.077368 55.01119",
+                                "upperCorner": "60.100113 55.024069"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgoxNDk5MDgzMDQwEmLQoNC-0YHRgdC40Y8sINCn0LXQu9GP0LHQuNC90YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCc0LjQsNGB0YEsINC80LjQutGA0L7RgNCw0LnQvtC9INCc0LjQsNGB0YEtMiIKDWhdcEIVEBFcQg,,",
+                        "Point": {
+                            "pos": "60.09122 55.016662"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "Россия, Южно-Уральская железная дорога, станция Миасс-2",
+                                "kind": "railway_station",
+                                "Address": {
+                                    "country_code": "RU",
+                                    "formatted": "Россия, Южно-Уральская железная дорога, станция Миасс-2",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "Россия"
+                                        },
+                                        {
+                                            "kind": "route",
+                                            "name": "Южно-Уральская железная дорога"
+                                        },
+                                        {
+                                            "kind": "railway_station",
+                                            "name": "станция Миасс-2"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "Россия, Южно-Уральская железная дорога, станция Миасс-2",
+                                        "CountryNameCode": "RU",
+                                        "CountryName": "Россия",
+                                        "Country": {
+                                            "Locality": {}
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "станция Миасс-2",
+                        "description": "Южно-Уральская железная дорога, Россия",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "60.074376 55.013131",
+                                "upperCorner": "60.090834 55.022587"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgkxMDAwOTgyMDQSZNCg0L7RgdGB0LjRjywg0K7QttC90L4t0KPRgNCw0LvRjNGB0LrQsNGPINC20LXQu9C10LfQvdCw0Y8g0LTQvtGA0L7Qs9CwLCDRgdGC0LDQvdGG0LjRjyDQnNC40LDRgdGBLTIiCg2XVHBCFUoSXEI,",
+                        "Point": {
+                            "pos": "60.082605 55.01786"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "Россия, Южно-Уральская железная дорога, станция Миасс-1",
+                                "kind": "railway_station",
+                                "Address": {
+                                    "country_code": "RU",
+                                    "formatted": "Россия, Южно-Уральская железная дорога, станция Миасс-1",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "Россия"
+                                        },
+                                        {
+                                            "kind": "route",
+                                            "name": "Южно-Уральская железная дорога"
+                                        },
+                                        {
+                                            "kind": "railway_station",
+                                            "name": "станция Миасс-1"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "Россия, Южно-Уральская железная дорога, станция Миасс-1",
+                                        "CountryNameCode": "RU",
+                                        "CountryName": "Россия",
+                                        "Country": {
+                                            "Locality": {}
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "станция Миасс-1",
+                        "description": "Южно-Уральская железная дорога, Россия",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "60.102853 55.028698",
+                                "upperCorner": "60.11931 55.03815"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgkxMDAxMTA0ODUSZNCg0L7RgdGB0LjRjywg0K7QttC90L4t0KPRgNCw0LvRjNGB0LrQsNGPINC20LXQu9C10LfQvdCw0Y8g0LTQvtGA0L7Qs9CwLCDRgdGC0LDQvdGG0LjRjyDQnNC40LDRgdGBLTEiCg2_cXBCFToiXEI,",
+                        "Point": {
+                            "pos": "60.111082 55.033424"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "Россия, Южно-Уральская железная дорога, станция Миасс-3",
+                                "kind": "railway_station",
+                                "Address": {
+                                    "country_code": "RU",
+                                    "formatted": "Россия, Южно-Уральская железная дорога, станция Миасс-3",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "Россия"
+                                        },
+                                        {
+                                            "kind": "route",
+                                            "name": "Южно-Уральская железная дорога"
+                                        },
+                                        {
+                                            "kind": "railway_station",
+                                            "name": "станция Миасс-3"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "Россия, Южно-Уральская железная дорога, станция Миасс-3",
+                                        "CountryNameCode": "RU",
+                                        "CountryName": "Россия",
+                                        "Country": {
+                                            "Locality": {}
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "станция Миасс-3",
+                        "description": "Южно-Уральская железная дорога, Россия",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "60.125536 55.019031",
+                                "upperCorner": "60.141993 55.028486"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=CgkxMDAwOTgyMTYSZNCg0L7RgdGB0LjRjywg0K7QttC90L4t0KPRgNCw0LvRjNGB0LrQsNGPINC20LXQu9C10LfQvdCw0Y8g0LTQvtGA0L7Qs9CwLCDRgdGC0LDQvdGG0LjRjyDQnNC40LDRgdGBLTMiCg36iHBCFVUYXEI,",
+                        "Point": {
+                            "pos": "60.133764 55.023759"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "Россия, Челябинская область, Миасс, квартал Миасс-1",
+                                "kind": "district",
+                                "Address": {
+                                    "country_code": "RU",
+                                    "formatted": "Россия, Челябинская область, Миасс, квартал Миасс-1",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "Россия"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Уральский федеральный округ"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Челябинская область"
+                                        },
+                                        {
+                                            "kind": "area",
+                                            "name": "Миасский городской округ"
+                                        },
+                                        {
+                                            "kind": "locality",
+                                            "name": "Миасс"
+                                        },
+                                        {
+                                            "kind": "district",
+                                            "name": "квартал Миасс-1"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "Россия, Челябинская область, Миасс, квартал Миасс-1",
+                                        "CountryNameCode": "RU",
+                                        "CountryName": "Россия",
+                                        "AdministrativeArea": {
+                                            "AdministrativeAreaName": "Челябинская область",
+                                            "SubAdministrativeArea": {
+                                                "SubAdministrativeAreaName": "Миасский городской округ",
+                                                "Locality": {
+                                                    "LocalityName": "Миасс",
+                                                    "DependentLocality": {
+                                                        "DependentLocalityName": "квартал Миасс-1"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "квартал Миасс-1",
+                        "description": "Миасс, Челябинская область, Россия",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "60.118484 55.020575",
+                                "upperCorner": "60.146897 55.034379"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=Cgo0MjQwMjc3ODI5ElzQoNC-0YHRgdC40Y8sINCn0LXQu9GP0LHQuNC90YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCc0LjQsNGB0YEsINC60LLQsNGA0YLQsNC7INCc0LjQsNGB0YEtMSIKDeOFcEIVyxxcQg,,",
+                        "Point": {
+                            "pos": "60.130746 55.02812"
+                        }
+                    }
+                },
+                {
+                    "GeoObject": {
+                        "metaDataProperty": {
+                            "GeocoderMetaData": {
+                                "precision": "other",
+                                "text": "Россия, Челябинская область, Аргаяшский район, Байрамгуловское сельское поселение, деревня Новый Миасс",
+                                "kind": "locality",
+                                "Address": {
+                                    "country_code": "RU",
+                                    "formatted": "Россия, Челябинская область, Аргаяшский район, Байрамгуловское сельское поселение, деревня Новый Миасс",
+                                    "Components": [
+                                        {
+                                            "kind": "country",
+                                            "name": "Россия"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Уральский федеральный округ"
+                                        },
+                                        {
+                                            "kind": "province",
+                                            "name": "Челябинская область"
+                                        },
+                                        {
+                                            "kind": "area",
+                                            "name": "Аргаяшский район"
+                                        },
+                                        {
+                                            "kind": "area",
+                                            "name": "Байрамгуловское сельское поселение"
+                                        },
+                                        {
+                                            "kind": "locality",
+                                            "name": "деревня Новый Миасс"
+                                        }
+                                    ]
+                                },
+                                "AddressDetails": {
+                                    "Country": {
+                                        "AddressLine": "Россия, Челябинская область, Аргаяшский район, Байрамгуловское сельское поселение, деревня Новый Миасс",
+                                        "CountryNameCode": "RU",
+                                        "CountryName": "Россия",
+                                        "AdministrativeArea": {
+                                            "AdministrativeAreaName": "Челябинская область",
+                                            "SubAdministrativeArea": {
+                                                "SubAdministrativeAreaName": "Аргаяшский район",
+                                                "Locality": {
+                                                    "LocalityName": "деревня Новый Миасс"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "name": "деревня Новый Миасс",
+                        "description": "Байрамгуловское сельское поселение, Аргаяшский район, Челябинская область, Россия",
+                        "boundedBy": {
+                            "Envelope": {
+                                "lowerCorner": "60.508469 55.306707",
+                                "upperCorner": "60.523642 55.32182"
+                            }
+                        },
+                        "uri": "ymapsbm1://geo?data=Cgg1MzE1MzYyNBK-AdCg0L7RgdGB0LjRjywg0KfQtdC70Y_QsdC40L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0JDRgNCz0LDRj9GI0YHQutC40Lkg0YDQsNC50L7QvSwg0JHQsNC50YDQsNC80LPRg9C70L7QstGB0LrQvtC1INGB0LXQu9GM0YHQutC-0LUg0L_QvtGB0LXQu9C10L3QuNC1LCDQtNC10YDQtdCy0L3RjyDQndC-0LLRi9C5INCc0LjQsNGB0YEiCg0MD3JCFQ5DXUI,",
+                        "Point": {
+                            "pos": "60.514695 55.315483"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
