@@ -1110,6 +1110,32 @@ files = [
 ]
 
 [[package]]
+name = "pytelegrambotapi"
+version = "4.19.1"
+description = "Python Telegram bot api."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "pytelegrambotapi-4.19.1-py3-none-any.whl", hash = "sha256:22b0835f06a79eea93cc2c29079e4bb10f706b282ae10a3e537557b4679b12f2"},
+    {file = "pytelegrambotapi-4.19.1.tar.gz", hash = "sha256:cd5e5188a49f50a5c1fb1d8d195a852a05ae3525d21f26fbe8365cb408ee1342"},
+]
+
+[package.dependencies]
+requests = "*"
+
+[package.extras]
+aiohttp = ["aiohttp"]
+aioredis = ["aioredis"]
+coloredlogs = ["coloredlogs"]
+fastapi = ["fastapi"]
+json = ["ujson"]
+pil = ["pillow"]
+psutil = ["psutil"]
+redis = ["redis (>=3.4.1)"]
+uvicorn = ["uvicorn"]
+watchdog = ["watchdog"]
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 description = "Extensions to the standard Python datetime module"
@@ -1365,4 +1391,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "c9b8e03ab20774f259a5cd451885146a705abbb16a5098d727f03f9ac31d92c1"
+content-hash = "c237d2c89934841a2cb3d0aefb8a7b90d778dc87193e3098fad0ffec56b1cfcf"

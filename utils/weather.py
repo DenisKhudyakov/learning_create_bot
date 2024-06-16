@@ -1,6 +1,7 @@
-from utils.misc.coordinates import get_coordinates
-from config_data.config import API_WEATHER_TOKEN
 import requests
+
+from config_data.config import API_WEATHER_TOKEN
+from utils.misc.coordinates import get_coordinates
 
 
 def get_weather(lat, lon):

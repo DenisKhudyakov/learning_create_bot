@@ -1,6 +1,6 @@
-from aiogram.types import Message
+from telebot.types import Message
 
-from src.loader import bot
+from utils.loader import bot
 
 
 @bot.message_handler(state=None)

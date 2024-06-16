@@ -23,5 +23,9 @@
 		4) Установите пакеты poetry install
 		5) Создайте вашего бота в телеграмм, получите токен и введите его в .env файл
 		6) Введите данные для подключения Postgres SQL в .env файл
-		7) Запустите проект python main.py
+		7) Запустите Celery Worker:
+			celery -A tasks worker --loglevel=info
+		8) Запустите Celery Beat:
+			celery -A tasks beat --loglevel=info
+		9) Запустите проект python main.py
 		

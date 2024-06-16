@@ -1,7 +1,7 @@
-from aiogram.types import Message
+from telebot.types import Message
 
 from config_data.config import DEFAULT_COMMANDS
-from src.loader import bot
+from utils.loader import bot
 
 
 @bot.message_handler(commands=["help"])

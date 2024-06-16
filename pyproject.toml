@@ -13,6 +13,7 @@ psycopg2-binary = "^2.9.9"
 requests = "^2.32.3"
 redis = "^5.0.6"
 celery = "^5.4.0"
+pytelegrambotapi = "^4.19.1"
 
 
 [tool.poetry.group.lint.dependencies]
