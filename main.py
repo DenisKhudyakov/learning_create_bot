@@ -1,5 +1,5 @@
-from handlers.custom_handlers import weather, maximum, minimum, history
-from handlers.default_handlers import help, start, echo
+from handlers.custom_handlers import history, maximum, minimum, weather
+from handlers.default_handlers import echo, help, start
 from utils.loader import bot
 
 if __name__ == "__main__":

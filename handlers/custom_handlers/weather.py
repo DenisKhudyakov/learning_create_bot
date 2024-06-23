@@ -3,7 +3,7 @@ import logging
 from telebot.types import Message
 
 from config_data.config import CITIES
-from database.database import add_weather, get_weather_from_db, add_user
+from database.database import add_user, add_weather, get_weather_from_db
 from utils.loader import bot
 from utils.misc.coordinates import get_coordinates
 from utils.weather import get_weather
@@ -45,9 +45,9 @@ def bot_weather(message: Message):
         )  # если город не найден в БД, то мы добавим его в избранное и обращаемся напрямую к API
         lat, lon = get_coordinates(city)
         weather_data = get_weather(lat, lon)
-        temp = weather_data['temp']
-        pressure = weather_data['pressure']
-        grnd_level = weather_data['grnd_level']
+        temp = weather_data["temp"]
+        pressure = weather_data["pressure"]
+        grnd_level = weather_data["grnd_level"]
         logging.debug(f"Айди пользователя: {user_id}")
         add_user(user_id=user_id, full_name=user_name)
         add_weather(
@@ -56,7 +56,7 @@ def bot_weather(message: Message):
             pressure=pressure,
             grnd_level=grnd_level,
             user_id=user_id,
-        ) # добавляем в БД запрос
+        )  # добавляем в БД запрос
         bot.reply_to(
             message,
             f"""

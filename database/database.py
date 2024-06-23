@@ -1,3 +1,4 @@
+from functools import wraps
 from typing import Any, Optional, Union
 
 from sqlalchemy import create_engine, func
@@ -5,7 +6,6 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 
 from config_data.config import config
 from models.models import Base, User, Weather
-from functools import wraps
 
 
 class Connection:
@@ -119,7 +119,3 @@ def get_weather_from_db(session, city: str) -> Union[Weather, list]:
         .order_by(Weather.id.desc())
         .first()
     )
-
-
-
-
