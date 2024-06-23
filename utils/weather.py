@@ -12,5 +12,5 @@ def get_weather(lat, lon):
 
 
 if __name__ == "__main__":
-    lat, lon = get_coordinates("Челябинск")
+    lat, lon = get_coordinates("Ярославль")
     print(get_weather(lat, lon))

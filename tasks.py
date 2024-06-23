@@ -17,7 +17,7 @@ def update_database():
         "port": config.db.port,
         "dbname": config.db.db_name,
         "user": config.db.db_user,
-        "password": config.db.db_password
+        "password": config.db.db_password,
     }
 
     with Connection(**connection_params) as conn:
@@ -25,5 +25,11 @@ def update_database():
         for city in CITIES:
             lat, lon = get_coordinates(city)
             data = get_weather(lat, lon)
-            add_weather(session, city=city, temp=data['temp'], pressure=data['pressure'], grnd_level=data['grnd_level'], user_id=None)
-
+            add_weather(
+                session,
+                city=city,
+                temp=data["temp"],
+                pressure=data["pressure"],
+                grnd_level=data["grnd_level"],
+                user_id=None,
+            )
