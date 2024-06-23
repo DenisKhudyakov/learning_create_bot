@@ -11,7 +11,10 @@ else:
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 API_WEATHER_TOKEN = os.getenv("API_WEATHER_TOKEN")
 DEFAULT_COMMANDS = (
-("start", "Запустить бота"), ("help", "Вывести справку"), ("weather <Город>", "Показать прогноз погоды по городу"))
+    ("start", "Запустить бота"),
+    ("help", "Вывести справку"),
+    ("weather <Город>", "Показать прогноз погоды по городу"),
+)
 DB_HOST = os.getenv("DB_HOST")
 DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
@@ -19,7 +22,11 @@ DB_NAME = os.getenv("DB_NAME")
 PORT = os.getenv("PORT")
 KEY_GEOCODER = os.getenv("KEY_GEOCODER")
 # добавьте необходимые города
-CITIES = ["Челябинск", "Москва", "Миасс"]  # Избранные города, по которым заполняется база данных
+CITIES = [
+    "Челябинск",
+    "Москва",
+    "Миасс",
+]  # Избранные города, по которым заполняется база данных
 
 
 @dataclass

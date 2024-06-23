@@ -1,6 +1,5 @@
 from telebot.types import Message
 
-from database.database import get_weather
 from utils.loader import bot
 
 

@@ -79,7 +79,7 @@ class UploadBD:
         )
 
 
-def get_weather(city: str) -> Union[dict, None]:
+def get_weather_in_bd(city: str) -> Union[dict, None]:
     """Функция получения данных из БД"""
     with Connection(
         host=config.db.db_host,
@@ -124,4 +124,4 @@ if __name__ == "__main__":
             )
 
             # Успешный тест
-    print(get_weather("Москва"))
+    print(get_weather_in_bd("Москва"))
