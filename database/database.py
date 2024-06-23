@@ -1,8 +1,9 @@
 from typing import Any, Optional, Union
 
-import psycopg2
-
+from sqlalchemy import create_engine
+from sqlalchemy.orm import scoped_session, sessionmaker
 from config_data.config import config
+from models.models import User, Weather, Base
 
 
 class Connection:
@@ -16,112 +17,72 @@ class Connection:
         self.dbname = dbname
         self.user = user
         self.password = password
-        try:
-            self.conn = psycopg2.connect(
-                host=self.host,
-                port=self.port,
-                dbname=self.dbname,
-                user=self.user,
-                password=self.password,
-            )
-        except psycopg2.OperationalError as e:
-            self.conn = psycopg2.connect(
-                host=self.host, port=self.port, user=self.user, password=self.password
-            )
-            self.conn.autocommit = True
-            cursor = self.conn.cursor()
-            cursor.execute(f"DROP DATABASE IF EXISTS {self.dbname}")
-            cursor.execute(f"CREATE DATABASE {self.dbname}")
+        self.engine = None
+        self.Session = None
 
     def __enter__(self):
-        return self.conn
-
-    def __exit__(self, exc_type, exc_val, exc_tb) -> Union[bool, None]:
-        try:
-            self.conn.commit()
-            self.conn.close()
-        except TypeError as e:
-            print(e)
-            return True
-
-
-class UploadBD:
-    """Класс для загрузки данных в БД"""
-
-    @staticmethod
-    def create_table(cur: Any) -> None:
-        """Создание таблицы"""
-        cur.execute(
-            """
-            CREATE TABLE IF NOT EXISTS weather 
-            (
-            city VARCHAR(255) NOT NULL,
-            temp FLOAT,
-            pressure INTEGER,
-            grnd_level INTEGER
-            )
-            """
+        self.engine = create_engine(
+            f"postgresql://{self.user}:{self.password}@{self.host}:{self.port}/{self.dbname}",
+            echo=True,
         )
+        self.Session = scoped_session(sessionmaker(bind=self.engine))
+        Base.metadata.create_all(self.engine)
+        return self
 
-    @staticmethod
-    def insert_data(cur: Any, data: dict, city: str) -> None:
-        """Запись данных"""
-        cur.execute(
-            """
-        INSERT INTO weather (city, temp, pressure, grnd_level) VALUES (%s, %s, %s, %s)
-        """,
-            (
-                city,
-                data["temp"],
-                data["pressure"],
-                data["grnd_level"],
-            ),
-        )
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.Session.remove()
+        self.engine.dispose()
 
 
-def get_weather_in_bd(city: str) -> Union[dict, None]:
-    """Функция получения данных из БД"""
-    with Connection(
-        host=config.db.db_host,
-        port=config.db.port,
-        dbname=config.db.db_name,
-        user=config.db.db_user,
-        password=config.db.db_password,
-    ) as conn:
-        with conn.cursor() as cur:
-            cur.execute(
-                """
-                SELECT * FROM weather WHERE city = %s""",
-                (city,),
-            )
-            row = cur.fetchall()
-            if row:
-                return {
-                    "temp": row[0][1],
-                    "pressure": row[0][2],
-                    "grnd_level": row[0][3],
-                }
-            else:
-                return None
+def add_user(session, user_id: int, full_name: str):
+    """Функция добавления нового пользователя"""
+    user = User(user_id=user_id, full_name=full_name)
+    session.add(user)
+    session.commit()
+
+
+def add_weather(session, city: str, temp: float, pressure: int, grnd_level: int, user_id: int | None):
+    """Функция добавления новой погоды"""
+    user = session.query(User).filter(User.user_id == user_id).first()
+    if user:
+        weather = Weather(city=city, temp=temp, pressure=pressure, grnd_level=grnd_level, user_id=user.id)
+        session.add(weather)
+        session.commit()
+    else:
+        weather = Weather(city=city, temp=temp, pressure=pressure, grnd_level=grnd_level)
+        session.add(weather)
+        session.commit()
+
+
+def get_weather_history(session, user_id: int) -> Union[Weather, list]:
+    user = session.query(User).filter(User.user_id == user_id).first()
+    if user:
+        return session.query(Weather).filter(Weather.user_id == user.id).all()
+    return []
 
 
 if __name__ == "__main__":
+    connection_params = {
+        "host": config.db.db_host,
+        "port": config.db.port,
+        "dbname": config.db.db_name,
+        "user": config.db.db_user,
+        "password": config.db.db_password
+    }
     # Подключение к БД
-    with Connection(
-        host=config.db.db_host,
-        port=config.db.port,
-        dbname=config.db.db_name,
-        user=config.db.db_user,
-        password=config.db.db_password,
-    ) as conn:
-        with conn.cursor() as cur:  # Создание таблицы
-            UploadBD.create_table(cur)
-            UploadBD.insert_data(
-                cur, {"temp": 10, "pressure": 100, "grnd_level": 1000}, "Moscow"
-            )
-            UploadBD.insert_data(
-                cur, {"temp": 20, "pressure": 200, "grnd_level": 2000}, "London"
-            )
+    with Connection(**connection_params) as conn:
+        session = conn.Session()
 
-            # Успешный тест
-    print(get_weather_in_bd("Москва"))
+        # Добавление нового пользователя
+        add_user(session, user_id=12345, full_name="john_doe")
+
+        # Добавление записи о погоде
+        add_weather(session, user_id=12345, city="Нижний Новогород", temp=20.5, pressure=1013, grnd_level=1000)
+
+        # Получение истории погоды
+        history = get_weather_history(session, user_id=12345)
+        for record in history:
+            print(
+                f"Weather in {record.city}: {record.temp}°C, Pressure: {record.pressure}, Ground Level: {record.grnd_level}")
+
+
